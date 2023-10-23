@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.head
+{
+    @apply flex justify-between items-center px-4;
+}
+
+.title
+{
+    @apply text-3xl text-transparent font-bold bg-clip-text bg-gradient-to-br from-sky-500 to-blue-700;
+}
+
+.nav
+{
+    @apply p-4;
+}
+
+.nav-list
+{
+    @apply flex justify-end space-x-4;
+}
+
+.nav-item
+{
+    @apply font-bold text-gray-600 ;
+}
+
+.nav-item:hover
+{
+    @apply text-transparent font-bold bg-clip-text  border-b-2 ;
+}
+.i1:hover
+{
+    @apply bg-gradient-to-br from-blue-500 to-blue-700 border-blue-500;
+}
+
+.i2:hover
+{
+    @apply bg-gradient-to-br from-yellow-500 to-orange-600 border-orange-500;
+}
+
+.i3:hover
+{
+    @apply bg-gradient-to-br from-pink-500 to-purple-700 border-purple-700;
+}
+
+.i4:hover
+{
+    @apply bg-gradient-to-br from-lime-500 to-green-500 border-green-500;
+}
+
+.i1.active
+{
+    @apply text-transparent font-bold bg-clip-text  border-b-2 bg-gradient-to-br from-blue-500 to-blue-700 border-blue-500;
+}
+
+.i2.active
+{
+    @apply text-transparent font-bold bg-clip-text  border-b-2 bg-gradient-to-br from-yellow-500 to-orange-600 border-orange-500;
+}
+
+.i3.active
+{
+    @apply text-transparent font-bold bg-clip-text  border-b-2 bg-gradient-to-br from-pink-500 to-purple-700 border-purple-700;
+}
+
+.i4.active
+{
+    @apply text-transparent font-bold bg-clip-text  border-b-2 bg-gradient-to-br from-lime-500 to-green-500 border-green-500;
+}
+
+.text
+{
+    @apply w-1/2 justify-end text-gray-600;
+}
+
+.content
+{
+    @apply flex justify-end items-center;
+}

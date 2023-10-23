@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es-es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Rodrigo</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+    <header class="head">
+        <div class="nav-title">
+          <h1 class="title">Rodrigo <br>Murillo <br>Ba&ntilde;uelos</h1>
+        </div>
+        <nav class="nav">
+            <ul class="nav-list">
+            <li>
+                <button href="#" onclick="clicked(this)" class="nav-item i1 active">Home</button>
+            </li>
+            <li>
+                <button href="#" onclick="clicked(this)" class="nav-item i2">Sobre m&iacute;</button>
+            </li>
+            <li>
+                <button href="#" onclick="clicked(this)" class="nav-item i3">Proyectos</button>
+            </li>
+            <li>
+                <button href="#" onclick="clicked(this)" class="nav-item i4">Contacto</button>
+            </li>
+            </ul>
+        </nav>
+      </header>
+      <div class="content">
+        <p class="text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris et egestas velit, ac faucibus augue. Morbi condimentum dolor sit amet dui accumsan venenatis. Pellentesque vehicula dolor eget dui sagittis, quis lacinia magna ornare. Duis fringilla, libero quis varius suscipit, tortor nunc pharetra tellus, a ultricies massa nibh hendrerit leo. Suspendisse odio sapien, fermentum eu fringilla nec, sagittis a tellus. Aenean bibendum sagittis lorem, nec ultricies turpis facilisis quis. Nunc leo tortor, sollicitudin vitae placerat nec, aliquet quis lacus. Maecenas volutpat magna diam, in tincidunt orci molestie ac.
+        </p>
+      </div>
+
+      <script>
+        const cont = ['Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris et egestas velit, ac faucibus augue. Morbi condimentum dolor sit amet dui accumsan venenatis. Pellentesque vehicula dolor eget dui sagittis, quis lacinia magna ornare. Duis fringilla, libero quis varius suscipit, tortor nunc pharetra tellus, a ultricies massa nibh hendrerit leo. Suspendisse odio sapien, fermentum eu fringilla nec, sagittis a tellus. Aenean bibendum sagittis lorem, nec ultricies turpis facilisis quis. Nunc leo tortor, sollicitudin vitae placerat nec, aliquet quis lacus. Maecenas volutpat magna diam, in tincidunt orci molestie ac.',
+        'Phasellus laoreet tellus a velit dapibus mattis. Morbi ut faucibus mi. Nullam nec interdum est. Morbi sollicitudin ante eget ante hendrerit hendrerit. Duis sit amet ante at nibh suscipit auctor. Sed est lacus, luctus ut lacus ac, sagittis faucibus ante. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis purus orci, tincidunt in feugiat ac, vehicula eget ex. Sed et risus porttitor, dapibus orci in, convallis urna. Nulla rutrum eu enim quis mattis. Nunc malesuada rutrum nisi, at bibendum ante semper nec. Etiam sit amet congue diam. Nullam ullamcorper tellus nibh, id euismod sem accumsan at. Nullam bibendum, elit non tincidunt rutrum, nunc magna tincidunt elit, quis feugiat dolor nulla id massa. Curabitur malesuada convallis eros, quis viverra purus pharetra a. Proin quis leo lacinia, tincidunt massa sit amet, mollis massa.',
+        'Vestibulum dapibus lacus nibh, tristique convallis tellus varius tempor. Etiam eu hendrerit justo. Fusce tempus lobortis velit eu interdum. Quisque dignissim hendrerit imperdiet. Pellentesque rhoncus magna non nulla sagittis, tempus pharetra orci mattis. Donec eu sagittis leo. Proin ac urna mi. Proin id nisl nunc. Etiam quis lacus non augue feugiat auctor. In ut justo nec nisi porttitor elementum vitae et erat. Nam mattis tortor vestibulum mi posuere gravida. Fusce nec tincidunt arcu. Nulla ante quam, auctor a justo et, ultricies posuere magna. Morbi dapibus quis purus eu fermentum. Cras aliquam orci erat.',
+        'In hac habitasse platea dictumst. Suspendisse pharetra placerat maximus. Nam lectus nulla, facilisis at mauris ac, tincidunt placerat dui. Curabitur eu aliquam quam. Fusce ut dolor non magna mattis tincidunt. Integer in erat eu velit bibendum tincidunt vel ut ex. Pellentesque condimentum lorem a augue aliquam, et ultrices sapien imperdiet.'];
+
+        function clicked(e){
+          const lis = document.querySelectorAll('.nav-item');
+          lis.forEach(el => el.classList.remove('active'));
+          e.classList.toggle('active');
+          const text = document.querySelector('.text');
+          if(e.classList.contains('i1')){
+            text.innerHTML = cont[0];
+            }else if(e.classList.contains('i2')){
+            text.innerHTML = cont[1];
+            }else if(e.classList.contains('i3')){
+            text.innerHTML = cont[2];
+            }else if(e.classList.contains('i4')){
+            text.innerHTML = cont[3];
+            }
+        }
+      </script> 
+</body>
+</html>
